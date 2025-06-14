@@ -70,10 +70,13 @@ export default function AboutPage() {
                 About <span className="text-gradient">Earl Knighten</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                With over 12 years of experience in real estate, I've built my
-                reputation on trust, expertise, and exceptional results. My
-                mission is simple: to make your real estate dreams a reality
-                through personalized service and unwavering dedication.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {achievements.map((achievement, index) => (
@@ -113,24 +116,31 @@ export default function AboutPage() {
             </h2>
             <div className="glass-effect rounded-2xl p-8 md:p-12">
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I began my real estate career in 2012 with a simple belief:
-                every client deserves exceptional service and honest guidance.
-                What started as a passion for helping families find their
-                perfect homes has grown into a thriving practice built on
-                referrals and repeat clients.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                I specialize in luxury residential properties and have extensive
-                experience in both buyer and seller representation. My approach
-                is consultative – I listen to your needs, understand your goals,
-                and develop a customized strategy to achieve the best possible
-                outcome.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
-                When I'm not helping clients, you'll find me exploring local
-                neighborhoods, staying current with market trends, or spending
-                time with my family. I believe that understanding the community
-                is just as important as understanding the market.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
           </div>
@@ -212,9 +222,9 @@ export default function AboutPage() {
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-amber-500 mt-0.5" />
                     <span className="text-gray-300">
-                      Serving the Greater Metro Area
+                      Serving the Greater Tampa Bay Metro Area
                       <br />
-                      Licensed in State
+                      Licensed in FL and GA
                     </span>
                   </div>
                 </div>
