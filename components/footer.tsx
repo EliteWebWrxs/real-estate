@@ -10,6 +10,14 @@ import {
   Linkedin,
 } from "lucide-react";
 
+const navItems = [
+  { name: "About me", href: "/about-earl" },
+  { name: "Listings", href: "/listings" },
+  { name: "Sell", href: "/sell" },
+  { name: "Testimonials", href: "/testimonials" },
+  ,
+];
+
 export function Footer() {
   return (
     <footer className="bg-gray-950 border-t border-gray-800">
@@ -62,13 +70,13 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Quick Links</h3>
             <div className="space-y-2">
-              {["About", "Listings", "Search", "Sell"].map((item) => (
+              {navItems.map((item: any) => (
                 <Link
-                  key={item}
-                  href={`/${item.toLowerCase()}`}
+                  key={item.name}
+                  href={`/${item.href}`}
                   className="block text-gray-400 hover:text-amber-500 transition-colors text-sm"
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </div>
