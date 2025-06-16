@@ -99,6 +99,7 @@ const config: Config = {
         "slide-in-right": "slideInRight 0.8s ease-out forwards",
         "bounce-slow": "bounce 2s infinite",
         "pulse-slow": "pulse 3s infinite",
+        "scroll-dot": "scrollDot 1.5s infinite",
       },
       keyframes: {
         fadeIn: {
@@ -116,6 +117,11 @@ const config: Config = {
         slideInRight: {
           "0%": { opacity: "0", transform: "translateX(30px)" },
           "100%": { opacity: "1", transform: "translateX(0)" },
+        },
+        scrollDot: {
+          "0%": { transform: "translateY(0)", opacity: "1" },
+          "50%": { transform: "translateY(6px)", opacity: "0.5" },
+          "100%": { transform: "translateY(12px)", opacity: "0" },
         },
       },
       backdropBlur: {
