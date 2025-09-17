@@ -132,13 +132,13 @@ export function MarketExpertise() {
                   >
                     {area.stats}
                   </Badge>
-                  <div className="space-y-1">
+                  {/* <div className="space-y-1">
                     {area?.markets?.map((market) => (
                       <div key={market} className="text-sm text-slate-500">
                         {market}
                       </div>
                     ))}
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             );
