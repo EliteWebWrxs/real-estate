@@ -9,33 +9,33 @@ export function MarketExpertise() {
       title: "Premium Residential",
       description: "Exclusive estates, penthouses, and high-end condominiums",
       stats: "$2.5B+ in sales",
-      markets: ["Manhattan", "Beverly Hills", "Miami Beach", "Aspen"],
+      // markets: ["Manhattan", "Beverly Hills", "Miami Beach", "Aspen"],
     },
-    {
-      icon: Globe,
-      title: "International Properties",
-      description: "Global premium real estate across premier destinations",
-      stats: "45+ countries",
-      markets: ["London", "Paris", "Tokyo", "Dubai"],
-    },
+    // {
+    //   icon: Globe,
+    //   title: "International Properties",
+    //   description: "Global premium real estate across premier destinations",
+    //   stats: "45+ countries",
+    //   // markets: ["London", "Paris", "Tokyo", "Dubai"],
+    // },
     {
       icon: TrendingUp,
       title: "Investment Properties",
       description: "Commercial and residential investment opportunities",
       stats: "15% avg. ROI",
-      markets: [
-        "Commercial Districts",
-        "Emerging Markets",
-        "REITs",
-        "Development",
-      ],
+      // markets: [
+      //   "Commercial Districts",
+      //   "Emerging Markets",
+      //   "REITs",
+      //   "Development",
+      // ],
     },
     {
       icon: MapPin,
       title: "Waterfront Properties",
       description: "Oceanfront, lakefront, and riverfront premium homes",
       stats: "500+ waterfront sales",
-      markets: ["Hamptons", "Malibu", "Lake Tahoe", "Martha's Vineyard"],
+      // markets: ["South Tampa", "Siesta Keys", "St. Pete"],
     },
   ];
 
@@ -108,7 +108,7 @@ export function MarketExpertise() {
         </div>
 
         {/* Expertise Areas */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
           {expertiseAreas.map((area) => {
             const IconComponent = area.icon;
             return (
@@ -133,7 +133,7 @@ export function MarketExpertise() {
                     {area.stats}
                   </Badge>
                   <div className="space-y-1">
-                    {area.markets.map((market) => (
+                    {area?.markets?.map((market) => (
                       <div key={market} className="text-sm text-slate-500">
                         {market}
                       </div>
