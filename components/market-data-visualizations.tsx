@@ -16,7 +16,7 @@ const marketData = [
     change: "+12.5%",
     trend: "up",
     period: "YoY",
-    description: "Luxury market median",
+    description: "Premium market median",
   },
   {
     title: "Days on Market",
@@ -40,7 +40,7 @@ const marketData = [
     change: "+18.7%",
     trend: "up",
     period: "Annual Growth",
-    description: "Luxury segment average",
+    description: "Premium segment average",
   },
 ];
 
@@ -69,7 +69,7 @@ export function MarketDataVisualizations() {
           </h2>
           <p className="text-xl text-stone-600 max-w-3xl mx-auto leading-relaxed">
             Stay informed with live market data and interactive visualizations
-            of luxury real estate trends and performance metrics.
+            of premium real estate trends and performance metrics.
           </p>
         </div>
 
@@ -205,10 +205,10 @@ export function MarketDataVisualizations() {
                 Market Summary
               </h3>
               <p className="text-lg text-stone-600 max-w-4xl mx-auto leading-relaxed">
-                The luxury real estate market continues to show strong
+                The premium real estate market continues to show strong
                 performance with a 12.5% year-over-year price increase and
                 reduced time on market. Inventory levels are healthy, and buyer
-                demand remains robust across all luxury segments.
+                demand remains robust across all premium segments.
               </p>
               <div className="mt-6 flex flex-wrap justify-center gap-4">
                 <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-200">

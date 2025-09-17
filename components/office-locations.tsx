@@ -15,7 +15,11 @@ export function OfficeLocations() {
       saturday: "10:00 AM - 6:00 PM",
       sunday: "12:00 PM - 5:00 PM",
     },
-    specialties: ["Waterfront Properties", "Downtown Condos", "Luxury Estates"],
+    specialties: [
+      "Waterfront Properties",
+      "Downtown Condos",
+      "Premium Estates",
+    ],
     manager: "Victoria Sterling",
     image: "/luxury-real-estate-office-tampa.jpg",
   };
@@ -32,7 +36,7 @@ export function OfficeLocations() {
               </h3>
               <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
                 {
-                  "Contact our Tampa office to schedule a consultation with our luxury real estate experts. We're here to help you find your perfect property."
+                  "Contact our Tampa office to schedule a consultation with our premium real estate experts. We're here to help you find your perfect property."
                 }
               </p>
               <div className="flex flex-wrap justify-center gap-4">

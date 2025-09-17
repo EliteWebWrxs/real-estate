@@ -1,18 +1,29 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Separator } from "@/components/ui/separator"
-import { Bed, Bath, Square, MapPin, Calendar, Car, Heart, Share2, Phone, Mail } from "lucide-react"
-import { type Property, formatPrice, formatSquareFootage } from "@/lib/sanity"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+import {
+  Bed,
+  Bath,
+  Square,
+  MapPin,
+  Calendar,
+  Car,
+  Heart,
+  Share2,
+  Phone,
+  Mail,
+} from "lucide-react";
+import { type Property, formatPrice, formatSquareFootage } from "@/lib/sanity";
 
 interface PropertyDetailsProps {
-  property: Property
+  property: Property;
 }
 
 export function PropertyDetails({ property }: PropertyDetailsProps) {
-  const mainImage = property.images[0]?.asset.url || "/placeholder.svg"
+  const mainImage = property.images[0]?.asset.url || "/placeholder.svg";
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -26,10 +37,18 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
         <div className="absolute inset-0 bg-black/20" />
 
         <div className="absolute top-6 right-6 flex gap-3">
-          <Button size="sm" variant="ghost" className="bg-white/90 hover:bg-white">
+          <Button
+            size="sm"
+            variant="ghost"
+            className="bg-white/90 hover:bg-white"
+          >
             <Heart className="h-4 w-4" />
           </Button>
-          <Button size="sm" variant="ghost" className="bg-white/90 hover:bg-white">
+          <Button
+            size="sm"
+            variant="ghost"
+            className="bg-white/90 hover:bg-white"
+          >
             <Share2 className="h-4 w-4" />
           </Button>
         </div>
@@ -40,13 +59,15 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
               property.status === "available"
                 ? "bg-green-600"
                 : property.status === "pending"
-                  ? "bg-yellow-600"
-                  : "bg-red-600"
+                ? "bg-yellow-600"
+                : "bg-red-600"
             } text-white mb-2`}
           >
             {property.status.charAt(0).toUpperCase() + property.status.slice(1)}
           </Badge>
-          {property.featured && <Badge className="bg-amber-600 text-white">Featured</Badge>}
+          {property.featured && (
+            <Badge className="bg-amber-600 text-white">Featured</Badge>
+          )}
         </div>
       </div>
 
@@ -56,15 +77,20 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
           <div className="lg:col-span-2 space-y-8">
             {/* Property Header */}
             <div>
-              <h1 className="text-4xl md:text-5xl font-light text-slate-900 mb-4">{property.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-light text-slate-900 mb-4">
+                {property.title}
+              </h1>
               <div className="flex items-center text-slate-600 mb-6">
                 <MapPin className="h-5 w-5 mr-2" />
                 <span className="text-lg">
-                  {property.location.neighborhood && `${property.location.neighborhood}, `}
+                  {property.location.neighborhood &&
+                    `${property.location.neighborhood}, `}
                   {property.location.city}, {property.location.state}
                 </span>
               </div>
-              <div className="text-4xl font-light text-amber-600 mb-8">{formatPrice(property.price)}</div>
+              <div className="text-4xl font-light text-amber-600 mb-8">
+                {formatPrice(property.price)}
+              </div>
             </div>
 
             {/* Property Stats */}
@@ -73,12 +99,16 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div className="text-center">
                     <Bed className="h-8 w-8 mx-auto mb-2 text-amber-600" />
-                    <div className="text-2xl font-semibold text-slate-900">{property.bedrooms}</div>
+                    <div className="text-2xl font-semibold text-slate-900">
+                      {property.bedrooms}
+                    </div>
                     <div className="text-sm text-slate-600">Bedrooms</div>
                   </div>
                   <div className="text-center">
                     <Bath className="h-8 w-8 mx-auto mb-2 text-amber-600" />
-                    <div className="text-2xl font-semibold text-slate-900">{property.bathrooms}</div>
+                    <div className="text-2xl font-semibold text-slate-900">
+                      {property.bathrooms}
+                    </div>
                     <div className="text-sm text-slate-600">Bathrooms</div>
                   </div>
                   <div className="text-center">
@@ -91,7 +121,9 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                   {property.garage && (
                     <div className="text-center">
                       <Car className="h-8 w-8 mx-auto mb-2 text-amber-600" />
-                      <div className="text-2xl font-semibold text-slate-900">{property.garage}</div>
+                      <div className="text-2xl font-semibold text-slate-900">
+                        {property.garage}
+                      </div>
                       <div className="text-sm text-slate-600">Garage</div>
                     </div>
                   )}
@@ -105,7 +137,9 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                 <CardTitle>About This Property</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-slate-700 leading-relaxed">{property.description}</p>
+                <p className="text-slate-700 leading-relaxed">
+                  {property.description}
+                </p>
               </CardContent>
             </Card>
 
@@ -117,7 +151,11 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
               <CardContent>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {property.amenities.map((amenity) => (
-                    <Badge key={amenity} variant="secondary" className="justify-start">
+                    <Badge
+                      key={amenity}
+                      variant="secondary"
+                      className="justify-start"
+                    >
                       {amenity}
                     </Badge>
                   ))}
@@ -134,7 +172,9 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex justify-between">
                     <span className="text-slate-600">Property Type:</span>
-                    <span className="font-medium capitalize">{property.propertyType}</span>
+                    <span className="font-medium capitalize">
+                      {property.propertyType}
+                    </span>
                   </div>
                   {property.yearBuilt && (
                     <div className="flex justify-between">
@@ -145,12 +185,16 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                   {property.lotSize && (
                     <div className="flex justify-between">
                       <span className="text-slate-600">Lot Size:</span>
-                      <span className="font-medium">{property.lotSize} acres</span>
+                      <span className="font-medium">
+                        {property.lotSize} acres
+                      </span>
                     </div>
                   )}
                   <div className="flex justify-between">
                     <span className="text-slate-600">Status:</span>
-                    <span className="font-medium capitalize">{property.status}</span>
+                    <span className="font-medium capitalize">
+                      {property.status}
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -168,13 +212,20 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                 <div className="text-center">
                   {property.listingAgent.image && (
                     <img
-                      src={property.listingAgent.image.asset.url || "/placeholder.svg"}
+                      src={
+                        property.listingAgent.image.asset.url ||
+                        "/placeholder.svg"
+                      }
                       alt={property.listingAgent.name}
                       className="w-20 h-20 rounded-full mx-auto mb-4 object-cover"
                     />
                   )}
-                  <h3 className="font-semibold text-lg">{property.listingAgent.name}</h3>
-                  <p className="text-slate-600">Luxury Real Estate Specialist</p>
+                  <h3 className="font-semibold text-lg">
+                    {property.listingAgent.name}
+                  </h3>
+                  <p className="text-slate-600">
+                    Premium Real Estate Specialist
+                  </p>
                 </div>
 
                 <Separator />
@@ -217,23 +268,34 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
                 <div className="space-y-3 text-sm">
                   <div className="flex justify-between">
                     <span>Property Price:</span>
-                    <span className="font-medium">{formatPrice(property.price)}</span>
+                    <span className="font-medium">
+                      {formatPrice(property.price)}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span>Down Payment (20%):</span>
-                    <span className="font-medium">{formatPrice(property.price * 0.2)}</span>
+                    <span className="font-medium">
+                      {formatPrice(property.price * 0.2)}
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span>Loan Amount:</span>
-                    <span className="font-medium">{formatPrice(property.price * 0.8)}</span>
+                    <span className="font-medium">
+                      {formatPrice(property.price * 0.8)}
+                    </span>
                   </div>
                   <Separator />
                   <div className="flex justify-between font-semibold">
                     <span>Est. Monthly Payment:</span>
-                    <span>{formatPrice((property.price * 0.8 * 0.045) / 12)}</span>
+                    <span>
+                      {formatPrice((property.price * 0.8 * 0.045) / 12)}
+                    </span>
                   </div>
                 </div>
-                <Button variant="outline" className="w-full mt-4 bg-transparent">
+                <Button
+                  variant="outline"
+                  className="w-full mt-4 bg-transparent"
+                >
                   Get Pre-Approved
                 </Button>
               </CardContent>
@@ -242,5 +304,5 @@ export function PropertyDetails({ property }: PropertyDetailsProps) {
         </div>
       </div>
     </div>
-  )
+  );
 }

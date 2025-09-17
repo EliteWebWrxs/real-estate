@@ -21,7 +21,7 @@ const buyingFeatures = [
     icon: Shield,
     title: "Negotiation Expertise",
     description:
-      "Strategic negotiation to secure the best terms and pricing for your luxury property acquisition.",
+      "Strategic negotiation to secure the best terms and pricing for your premium property acquisition.",
   },
   {
     icon: Key,
@@ -56,11 +56,11 @@ export function BuyingServices() {
           </Badge>
           <h2 className="font-serif text-4xl md:text-5xl font-light text-slate-900 mb-6 text-balance">
             Your Gateway to
-            <span className="text-amber-600"> Luxury Properties</span>
+            <span className="text-amber-600"> Premium Properties</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty leading-relaxed">
             Our comprehensive buying services ensure you find and secure the
-            perfect luxury property with confidence and ease.
+            perfect premium property with confidence and ease.
           </p>
         </div>
 

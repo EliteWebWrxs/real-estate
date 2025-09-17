@@ -7,9 +7,9 @@ import AgentContactCards from "@/components/agent-contact-cards";
 import SocialMediaLinks from "@/components/social-media-links";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Luxury Real Estate",
+  title: "Contact Us | Premium Real Estate",
   description:
-    "Get in touch with our luxury real estate experts. Multiple contact options for personalized service.",
+    "Get in touch with our premium real estate experts. Multiple contact options for personalized service.",
 };
 
 export default function ContactPage() {

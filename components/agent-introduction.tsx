@@ -16,10 +16,10 @@ import Link from "next/link";
 
 const agent = {
   name: "Earl Knighten",
-  title: "Luxury Real Estate Specialist",
+  title: "Premium Real Estate Specialist",
   image: "/earl-knighten.webp",
   specialties: [
-    "Luxury Estates",
+    "Premium Estates",
     "Waterfront Properties",
     "Investment Properties",
   ],
@@ -27,10 +27,10 @@ const agent = {
   sales: "$500M+",
   rating: 5.0,
   reviews: 127,
-  bio: "Earl Knighten has established himself as Tampa's premier luxury real estate specialist with an unparalleled commitment to excellence and white-glove service. His deep market knowledge and personalized approach have facilitated over $500 million in luxury transactions.",
+  bio: "Earl Knighten has established himself as Tampa's premier premium real estate specialist with an unparalleled commitment to excellence and white-glove service. His deep market knowledge and personalized approach have facilitated over $500 million in premium transactions.",
   achievements: [
-    "Top 1% Luxury Agent in Tampa",
-    "Luxury Real Estate Excellence Award",
+    "Top 1% premium Agent in Tampa",
+    "premium Real Estate Excellence Award",
     "Client Choice Award Winner",
   ],
   contact: {
@@ -44,7 +44,7 @@ const testimonials = [
     name: "Sarah Mitchell",
     role: "CEO, Mitchell Holdings",
     content:
-      "Earl's expertise and attention to detail made our $8M estate purchase seamless. His market knowledge of Tampa's luxury market is unmatched.",
+      "Earl's expertise and attention to detail made our $8M estate purchase seamless. His market knowledge of Tampa's premium market is unmatched.",
     rating: 5,
     property: "Tampa Bay Waterfront Estate",
   },
@@ -52,9 +52,9 @@ const testimonials = [
     name: "Robert Chen",
     role: "Investment Manager",
     content:
-      "Earl helped us build a $25M luxury portfolio in Tampa. His strategic insights and local network are invaluable.",
+      "Earl helped us build a $25M premium portfolio in Tampa. His strategic insights and local network are invaluable.",
     rating: 5,
-    property: "Hyde Park Luxury Collection",
+    property: "Hyde Park Premium Collection",
   },
   {
     name: "Diana Rodriguez",
@@ -77,12 +77,12 @@ export function AgentIntroduction() {
               Meet Earl Knighten
             </Badge>
             <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 text-balance">
-              Your Tampa Luxury Real Estate Expert
+              Your Tampa Premium Real Estate Expert
             </h2>
             <p className="text-xl text-slate-600 font-light max-w-3xl mx-auto text-pretty">
               Combining years of experience with unparalleled market knowledge
               to deliver exceptional results for discerning clients in Tampa's
-              luxury market.
+              premium market.
             </p>
           </div>
 
@@ -242,7 +242,7 @@ export function AgentIntroduction() {
                 </h3>
                 <p className="text-xl text-slate-300 mb-8 max-w-2xl">
                   Schedule a private consultation with Earl and discover your
-                  perfect luxury property in Tampa today.
+                  perfect premium property in Tampa today.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact">

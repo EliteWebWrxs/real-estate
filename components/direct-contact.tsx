@@ -5,7 +5,7 @@ const contactMethods = [
   {
     icon: Phone,
     title: "Call Us Directly",
-    primary: "+1 (555) 123-4567",
+    primary: "+1 (813) 648-0377",
     secondary: "Available 24/7 for urgent inquiries",
     action: "tel:+15551234567",
   },

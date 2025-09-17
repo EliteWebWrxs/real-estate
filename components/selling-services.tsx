@@ -16,7 +16,7 @@ const sellingFeatures = [
     icon: Camera,
     title: "Premium Marketing",
     description:
-      "Professional photography, virtual tours, and luxury marketing materials that showcase your property's finest features.",
+      "Professional photography, virtual tours, and premium marketing materials that showcase your property's finest features.",
   },
   {
     icon: TrendingUp,
@@ -28,13 +28,13 @@ const sellingFeatures = [
     icon: Globe,
     title: "Maximum Exposure",
     description:
-      "Marketing reach through luxury real estate networks and exclusive buyer databases.",
+      "Marketing reach through premium real estate networks and exclusive buyer databases.",
   },
   {
     icon: Users,
     title: "Qualified Buyer Network",
     description:
-      "Access to our extensive network of pre-qualified luxury buyers and international investors.",
+      "Access to our extensive network of pre-qualified premium buyers and international investors.",
   },
   {
     icon: Award,
@@ -46,7 +46,7 @@ const sellingFeatures = [
     icon: Handshake,
     title: "Expert Negotiation",
     description:
-      "Skilled negotiation to secure the best terms, price, and timeline for your luxury property sale.",
+      "Skilled negotiation to secure the best terms, price, and timeline for your premium property sale.",
   },
 ];
 
@@ -67,7 +67,7 @@ export function SellingServices() {
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty leading-relaxed">
             Our sophisticated selling approach combines market expertise with
-            luxury marketing to achieve exceptional results for your property.
+            premium marketing to achieve exceptional results for your property.
           </p>
         </div>
 

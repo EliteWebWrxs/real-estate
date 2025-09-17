@@ -1,4 +1,4 @@
-import { Search, MapPin, Filter } from "lucide-react"
+import { Search, MapPin, Filter } from "lucide-react";
 
 export default function SearchHero() {
   return (
@@ -8,10 +8,13 @@ export default function SearchHero() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light mb-6 text-balance">
             Find Your Perfect
-            <span className="block text-amber-400 font-normal">Luxury Home</span>
+            <span className="block text-amber-400 font-normal">
+              Premium Home
+            </span>
           </h1>
           <p className="text-xl md:text-2xl text-stone-300 mb-8 font-light leading-relaxed text-pretty">
-            Search through our exclusive collection of luxury properties with advanced MLS integration
+            Search through our exclusive collection of premium properties with
+            advanced MLS integration
           </p>
 
           {/* Quick Search Stats */}
@@ -32,5 +35,5 @@ export default function SearchHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

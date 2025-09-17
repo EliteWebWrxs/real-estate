@@ -103,7 +103,7 @@ export function HeaderNavigation() {
           <div className="hidden lg:flex items-center space-x-4">
             <div className="flex items-center space-x-2 text-sm text-neutral-600">
               <Phone className="h-4 w-4" />
-              <a href="tel:5551234567">(555) 123-4567</a>
+              <a href="tel:5551234567">(813) 648-0377</a>
             </div>
             <Button asChild className="bg-amber-600 hover:bg-amber-700">
               <Link href="/contact">Get Started</Link>
@@ -170,7 +170,7 @@ export function HeaderNavigation() {
               <div className="px-3 py-2 border-t border-neutral-200 mt-4">
                 <div className="flex items-center space-x-2 text-sm text-neutral-600 mb-3">
                   <Phone className="h-4 w-4" />
-                  <span>(555) 123-4567</span>
+                  <span>(813) 648-0377</span>
                 </div>
                 <Button
                   asChild

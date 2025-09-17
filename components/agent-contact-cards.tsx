@@ -5,14 +5,14 @@ import { Phone, Mail, MessageCircle, Star } from "lucide-react";
 
 const agent = {
   name: "Earl Knighten",
-  title: "Luxury Real Estate Specialist",
+  title: "Premium Real Estate Specialist",
   specialties: ["Tampa Bay", "Westshore", "Investment Properties"],
   phone: "+1 (813) 648-0377 ",
   email: "info@earlknighten.com",
   rating: 5.0,
   sales: "$500M+",
   image: "/professional-man-real-estate-agent.jpg",
-  bio: "Specializing in ultra-luxury properties with 15+ years of experience in Tampa's high-end markets.",
+  bio: "Specializing in premium properties with 15+ years of experience in Tampa's high-end markets.",
 };
 
 export default function AgentContactCards() {
@@ -24,7 +24,7 @@ export default function AgentContactCards() {
             Meet Earl Knighten
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Connect directly with Tampa's premier luxury real estate specialist
+            Connect directly with Tampa's premier premium real estate specialist
           </p>
         </div>
 

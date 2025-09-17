@@ -8,18 +8,18 @@ import Link from "next/link";
 export function TeamBios() {
   const teamMember = {
     name: "Earl Knighten",
-    role: "Luxury Real Estate Specialist",
+    role: "Premium Real Estate Specialist",
     image: "/earl-knighten.webp",
-    bio: "With over 15 years in luxury real estate, Earl founded his practice with a vision to redefine industry standards in Tampa's luxury market. His expertise in high-end properties and commitment to client excellence has established him as the premier luxury real estate specialist in the Tampa Bay area.",
+    bio: "With over 15 years in premium real estate, Earl founded his practice with a vision to redefine industry standards in Tampa's premium market. His expertise in high-end properties and commitment to client excellence has established him as the premier premium real estate specialist in the Tampa Bay area.",
     specialties: [
-      "Luxury Estates",
+      "Premium Estates",
       "Waterfront Properties",
       "Investment Advisory",
     ],
     achievements: [
       "$500M+ in career sales",
       "Top 1% in Tampa for 10 consecutive years",
-      "Luxury Real Estate Excellence Award",
+      "Premium Real Estate Excellence Award",
     ],
     contact: {
       email: "info@earlknighten.com",
@@ -37,7 +37,7 @@ export function TeamBios() {
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty">
             {
-              "Your dedicated luxury real estate professional bringing years of experience, unparalleled market knowledge, and unwavering dedication to serving discerning clients in Tampa."
+              "Your dedicated premium real estate professional bringing years of experience, unparalleled market knowledge, and unwavering dedication to serving discerning clients in Tampa."
             }
           </p>
         </div>

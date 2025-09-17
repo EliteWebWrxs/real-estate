@@ -10,7 +10,7 @@ const achievements = [
   {
     icon: Home,
     number: "200+",
-    label: "Luxury Properties Sold",
+    label: "Premium Properties Sold",
     description: "Exclusive homes worth over $500 million",
   },
   {
@@ -23,13 +23,13 @@ const achievements = [
     icon: Award,
     number: "15+",
     label: "Years Experience",
-    description: "Decades of luxury market expertise",
+    description: "Decades of premium market expertise",
   },
   {
     icon: TrendingUp,
     number: "$35M+",
     label: "Average Annual Sales",
-    description: "Top 1% of luxury real estate agents",
+    description: "Top 1% of premium real estate agents",
   },
 ];
 
@@ -51,7 +51,7 @@ export function BrandStory() {
                   My Story
                 </Badge>
                 <h2 className="text-4xl md:text-5xl font-light mb-6 text-balance">
-                  Redefining Luxury
+                  Redefining Premium
                   <span className="block text-amber-400">
                     Real Estate in Tampa
                   </span>
@@ -59,9 +59,9 @@ export function BrandStory() {
                 <p className="text-xl text-slate-300 font-light leading-relaxed mb-8 text-pretty">
                   For over fifteen years, I have been the trusted partner for
                   discerning clients seeking exceptional properties in Tampa's
-                  luxury market. My commitment to excellence, unparalleled
+                  premium market. My commitment to excellence, unparalleled
                   market knowledge, and white-glove service has established me
-                  as the premier luxury real estate specialist in the Tampa Bay
+                  as the premier premium real estate specialist in the Tampa Bay
                   area.
                 </p>
               </div>
@@ -106,7 +106,7 @@ export function BrandStory() {
                       Market Expertise
                     </h3>
                     <p className="text-slate-300">
-                      Deep understanding of Tampa's luxury markets with proven
+                      Deep understanding of Tampa's premium markets with proven
                       track record of optimal outcomes.
                     </p>
                   </div>

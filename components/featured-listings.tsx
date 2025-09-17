@@ -1,30 +1,35 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Bed, Bath, Square, MapPin, Heart, Eye } from "lucide-react"
-import { sanityClient, type Property, formatPrice, formatSquareFootage } from "@/lib/sanity"
+import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Bed, Bath, Square, MapPin, Heart, Eye } from "lucide-react";
+import {
+  sanityClient,
+  type Property,
+  formatPrice,
+  formatSquareFootage,
+} from "@/lib/sanity";
 
 export function FeaturedListings() {
-  const [properties, setProperties] = useState<Property[]>([])
-  const [loading, setLoading] = useState(true)
+  const [properties, setProperties] = useState<Property[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchProperties() {
       try {
-        const featuredProperties = await sanityClient.getFeaturedProperties()
-        setProperties(featuredProperties)
+        const featuredProperties = await sanityClient.getFeaturedProperties();
+        setProperties(featuredProperties);
       } catch (error) {
-        console.error("Error fetching properties:", error)
+        console.error("Error fetching properties:", error);
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
     }
 
-    fetchProperties()
-  }, [])
+    fetchProperties();
+  }, []);
 
   if (loading) {
     return (
@@ -58,7 +63,7 @@ export function FeaturedListings() {
           </div>
         </div>
       </section>
-    )
+    );
   }
 
   return (
@@ -70,11 +75,12 @@ export function FeaturedListings() {
               Featured Properties
             </Badge>
             <h2 className="text-4xl md:text-5xl font-light text-slate-900 mb-6 text-balance">
-              Exceptional Luxury Homes
+              Exceptional Premium Homes
             </h2>
             <p className="text-xl text-slate-600 font-light max-w-3xl mx-auto text-pretty">
-              Handpicked selection of the most prestigious properties, each offering unparalleled luxury and
-              sophisticated living experiences.
+              Handpicked selection of the most prestigious properties, each
+              offering unparalleled premium and sophisticated living
+              experiences.
             </p>
           </div>
 
@@ -96,12 +102,12 @@ export function FeaturedListings() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
 function PropertyCard({ property }: { property: Property }) {
-  const [isLiked, setIsLiked] = useState(false)
-  const mainImage = property.images[0]?.asset.url || "/placeholder.svg"
+  const [isLiked, setIsLiked] = useState(false);
+  const mainImage = property.images[0]?.asset.url || "/placeholder.svg";
 
   return (
     <Card className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
@@ -119,22 +125,34 @@ function PropertyCard({ property }: { property: Property }) {
             className="bg-white/90 hover:bg-white text-slate-700 rounded-full p-2"
             onClick={() => setIsLiked(!isLiked)}
           >
-            <Heart className={`h-4 w-4 ${isLiked ? "fill-red-500 text-red-500" : ""}`} />
+            <Heart
+              className={`h-4 w-4 ${
+                isLiked ? "fill-red-500 text-red-500" : ""
+              }`}
+            />
           </Button>
-          <Button size="sm" variant="ghost" className="bg-white/90 hover:bg-white text-slate-700 rounded-full p-2">
+          <Button
+            size="sm"
+            variant="ghost"
+            className="bg-white/90 hover:bg-white text-slate-700 rounded-full p-2"
+          >
             <Eye className="h-4 w-4" />
           </Button>
         </div>
 
-        {property.featured && <Badge className="absolute top-4 left-4 bg-amber-600 text-white">Featured</Badge>}
+        {property.featured && (
+          <Badge className="absolute top-4 left-4 bg-amber-600 text-white">
+            Featured
+          </Badge>
+        )}
 
         <Badge
           className={`absolute bottom-4 left-4 ${
             property.status === "available"
               ? "bg-green-600"
               : property.status === "pending"
-                ? "bg-yellow-600"
-                : "bg-red-600"
+              ? "bg-yellow-600"
+              : "bg-red-600"
           } text-white`}
         >
           {property.status.charAt(0).toUpperCase() + property.status.slice(1)}
@@ -146,13 +164,16 @@ function PropertyCard({ property }: { property: Property }) {
           <h3 className="text-xl font-semibold text-slate-900 group-hover:text-amber-600 transition-colors">
             {property.title}
           </h3>
-          <span className="text-2xl font-light text-amber-600">{formatPrice(property.price)}</span>
+          <span className="text-2xl font-light text-amber-600">
+            {formatPrice(property.price)}
+          </span>
         </div>
 
         <div className="flex items-center text-slate-600 mb-4">
           <MapPin className="h-4 w-4 mr-1" />
           <span className="text-sm">
-            {property.location.neighborhood && `${property.location.neighborhood}, `}
+            {property.location.neighborhood &&
+              `${property.location.neighborhood}, `}
             {property.location.city}, {property.location.state}
           </span>
         </div>
@@ -173,7 +194,9 @@ function PropertyCard({ property }: { property: Property }) {
         </div>
 
         <div className="mb-6">
-          <p className="text-sm text-slate-600 line-clamp-2">{property.description}</p>
+          <p className="text-sm text-slate-600 line-clamp-2">
+            {property.description}
+          </p>
         </div>
 
         <div className="flex flex-wrap gap-2 mb-6">
@@ -199,5 +222,5 @@ function PropertyCard({ property }: { property: Property }) {
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

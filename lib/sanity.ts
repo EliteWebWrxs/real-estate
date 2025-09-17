@@ -1,43 +1,43 @@
 // Sanity client configuration for fetching property data
 export interface Property {
-  _id: string
-  title: string
+  _id: string;
+  title: string;
   slug: {
-    current: string
-  }
+    current: string;
+  };
   location: {
-    city: string
-    state: string
-    neighborhood?: string
-  }
-  price: number
-  bedrooms: number
-  bathrooms: number
-  squareFootage: number
-  propertyType: "house" | "condo" | "penthouse" | "villa" | "townhouse"
+    city: string;
+    state: string;
+    neighborhood?: string;
+  };
+  price: number;
+  bedrooms: number;
+  bathrooms: number;
+  squareFootage: number;
+  propertyType: "house" | "condo" | "penthouse" | "villa" | "townhouse";
   images: Array<{
     asset: {
-      url: string
-    }
-    alt?: string
-  }>
-  featured: boolean
-  description: string
-  amenities: string[]
-  yearBuilt?: number
-  lotSize?: number
-  garage?: number
-  status: "available" | "pending" | "sold"
+      url: string;
+    };
+    alt?: string;
+  }>;
+  featured: boolean;
+  description: string;
+  amenities: string[];
+  yearBuilt?: number;
+  lotSize?: number;
+  garage?: number;
+  status: "available" | "pending" | "sold";
   listingAgent: {
-    name: string
-    email: string
-    phone: string
+    name: string;
+    email: string;
+    phone: string;
     image?: {
       asset: {
-        url: string
-      }
-    }
-  }
+        url: string;
+      };
+    };
+  };
 }
 
 // Mock Sanity client - replace with actual Sanity configuration
@@ -71,8 +71,15 @@ export class SanityClient {
           },
         ],
         featured: true,
-        description: "Stunning contemporary estate with panoramic ocean views and private beach access.",
-        amenities: ["Ocean View", "Private Beach", "Infinity Pool", "Wine Cellar", "Home Theater"],
+        description:
+          "Stunning contemporary estate with panoramic ocean views and private beach access.",
+        amenities: [
+          "Ocean View",
+          "Private Beach",
+          "Infinity Pool",
+          "Wine Cellar",
+          "Home Theater",
+        ],
         yearBuilt: 2021,
         lotSize: 1.2,
         garage: 3,
@@ -85,7 +92,7 @@ export class SanityClient {
       },
       {
         _id: "property-2",
-        title: "Luxury Penthouse Suite",
+        title: "Premium Penthouse Suite",
         slug: { current: "luxury-penthouse-suite" },
         location: {
           city: "Manhattan",
@@ -102,12 +109,19 @@ export class SanityClient {
             asset: {
               url: "/luxury-penthouse-with-city-skyline-view-and-modern.jpg",
             },
-            alt: "Luxury penthouse with city views",
+            alt: "Premium penthouse with city views",
           },
         ],
         featured: true,
-        description: "Exquisite penthouse with breathtaking city skyline views and premium finishes throughout.",
-        amenities: ["City Views", "Private Elevator", "Rooftop Terrace", "Concierge", "Gym Access"],
+        description:
+          "Exquisite penthouse with breathtaking city skyline views and premium finishes throughout.",
+        amenities: [
+          "City Views",
+          "Private Elevator",
+          "Rooftop Terrace",
+          "Concierge",
+          "Gym Access",
+        ],
         yearBuilt: 2020,
         garage: 2,
         status: "available",
@@ -140,8 +154,15 @@ export class SanityClient {
           },
         ],
         featured: true,
-        description: "Architectural masterpiece featuring clean lines, premium materials, and resort-style amenities.",
-        amenities: ["Mountain Views", "Resort Pool", "Tennis Court", "Guest House", "Smart Home"],
+        description:
+          "Architectural masterpiece featuring clean lines, premium materials, and resort-style amenities.",
+        amenities: [
+          "Mountain Views",
+          "Resort Pool",
+          "Tennis Court",
+          "Guest House",
+          "Smart Home",
+        ],
         yearBuilt: 2022,
         lotSize: 2.1,
         garage: 4,
@@ -152,28 +173,28 @@ export class SanityClient {
           phone: "(310) 555-0789",
         },
       },
-    ]
+    ];
   }
 
   async getAllProperties(filters?: {
-    location?: string
-    propertyType?: string
-    minPrice?: number
-    maxPrice?: number
-    bedrooms?: number
+    location?: string;
+    propertyType?: string;
+    minPrice?: number;
+    maxPrice?: number;
+    bedrooms?: number;
   }): Promise<Property[]> {
     // Mock implementation - would use GROQ query with filters
-    const allProperties = await this.getFeaturedProperties()
-    return allProperties // In real implementation, would apply filters
+    const allProperties = await this.getFeaturedProperties();
+    return allProperties; // In real implementation, would apply filters
   }
 
   async getPropertyBySlug(slug: string): Promise<Property | null> {
-    const properties = await this.getFeaturedProperties()
-    return properties.find((p) => p.slug.current === slug) || null
+    const properties = await this.getFeaturedProperties();
+    return properties.find((p) => p.slug.current === slug) || null;
   }
 }
 
-export const sanityClient = new SanityClient()
+export const sanityClient = new SanityClient();
 
 // Utility functions for formatting
 export function formatPrice(price: number): string {
@@ -182,9 +203,9 @@ export function formatPrice(price: number): string {
     currency: "USD",
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
-  }).format(price)
+  }).format(price);
 }
 
 export function formatSquareFootage(sqft: number): string {
-  return new Intl.NumberFormat("en-US").format(sqft)
+  return new Intl.NumberFormat("en-US").format(sqft);
 }

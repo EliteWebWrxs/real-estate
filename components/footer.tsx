@@ -22,11 +22,11 @@ export function Footer() {
             <div className="flex items-center space-x-2">
               <div className="h-8 w-8 rounded bg-amber-600"></div>
               <span className="font-playfair text-xl font-bold">
-                Luxury Estates
+                Premium Estates
               </span>
             </div>
             <p className="text-neutral-300 text-sm leading-relaxed">
-              Curating exceptional luxury properties for the most discerning
+              Curating exceptional premium properties for the most discerning
               clients. Your gateway to premium real estate experiences.
             </p>
             <div className="flex space-x-4">
@@ -194,7 +194,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-neutral-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-neutral-400">
-            © 2025 Luxury Estates. All rights reserved.
+            © 2025 Premium Estates. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link

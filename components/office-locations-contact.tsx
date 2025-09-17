@@ -22,7 +22,7 @@ export default function OfficeLocationsContact() {
             Visit Our Office
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Experience our luxury service in person at our premium Tampa
+            Experience our premium service in person at our premium Tampa
             location
           </p>
         </div>

@@ -1,16 +1,16 @@
-import type { Metadata } from "next"
-import { MarketReports } from "@/components/market-reports"
-import { NeighborhoodGuides } from "@/components/neighborhood-guides"
-import { InvestmentAnalysis } from "@/components/investment-analysis"
-import { BlogArticles } from "@/components/blog-articles"
-import { MarketDataVisualizations } from "@/components/market-data-visualizations"
-import { NewsletterSignup } from "@/components/newsletter-signup"
+import type { Metadata } from "next";
+import { MarketReports } from "@/components/market-reports";
+import { NeighborhoodGuides } from "@/components/neighborhood-guides";
+import { InvestmentAnalysis } from "@/components/investment-analysis";
+import { BlogArticles } from "@/components/blog-articles";
+import { MarketDataVisualizations } from "@/components/market-data-visualizations";
+import { NewsletterSignup } from "@/components/newsletter-signup";
 
 export const metadata: Metadata = {
-  title: "Market Insights | Luxury Real Estate",
+  title: "Market Insights | Premium Real Estate",
   description:
-    "Stay informed with comprehensive market reports, neighborhood guides, investment analysis, and expert insights from our luxury real estate professionals.",
-}
+    "Stay informed with comprehensive market reports, neighborhood guides, investment analysis, and expert insights from our premium real estate professionals.",
+};
 
 export default function MarketInsightsPage() {
   return (
@@ -22,8 +22,8 @@ export default function MarketInsightsPage() {
             Market Insights
           </h1>
           <p className="text-xl md:text-2xl text-stone-600 max-w-3xl mx-auto leading-relaxed text-pretty">
-            Stay ahead of the luxury real estate market with our comprehensive analysis, expert insights, and
-            data-driven reports.
+            Stay ahead of the premium real estate market with our comprehensive
+            analysis, expert insights, and data-driven reports.
           </p>
         </div>
       </section>
@@ -46,5 +46,5 @@ export default function MarketInsightsPage() {
       {/* Newsletter Signup */}
       <NewsletterSignup />
     </main>
-  )
+  );
 }

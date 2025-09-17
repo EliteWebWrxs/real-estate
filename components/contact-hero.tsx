@@ -7,7 +7,7 @@ export default function ContactHero() {
           Contact Me Today
         </h1>
         <p className="text-xl md:text-2xl text-neutral-200 max-w-3xl mx-auto text-balance">
-          Experience personalized luxury real estate service with multiple ways
+          Experience personalized premium real estate service with multiple ways
           to connect.
         </p>
       </div>

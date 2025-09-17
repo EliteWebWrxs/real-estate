@@ -10,13 +10,13 @@ export function ServicesCTA() {
           Ready to Experience
           <span className="text-amber-400">
             {" "}
-            Luxury Real Estate Excellence?
+            Premium Real Estate Excellence?
           </span>
         </h2>
 
         <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto text-pretty leading-relaxed">
           Contact me today to discuss how my comprehensive services can help you
-          achieve your luxury real estate goals in Tampa.
+          achieve your premium real estate goals in Tampa.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">

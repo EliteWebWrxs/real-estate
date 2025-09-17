@@ -1,9 +1,15 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Search, MapPin, Home, DollarSign } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Search, MapPin, Home, DollarSign } from "lucide-react";
 
 export function SearchSection() {
   return (
@@ -15,7 +21,8 @@ export function SearchSection() {
               Find Your Perfect Property
             </h2>
             <p className="text-xl text-slate-600 font-light text-pretty">
-              Advanced search tools to discover luxury homes that match your vision
+              Advanced search tools to discover premium homes that match your
+              vision
             </p>
           </div>
 
@@ -69,7 +76,9 @@ export function SearchSection() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm font-medium text-slate-700">Bedrooms</label>
+                <label className="text-sm font-medium text-slate-700">
+                  Bedrooms
+                </label>
                 <Select>
                   <SelectTrigger className="border-slate-200 focus:border-amber-500 focus:ring-amber-500/20">
                     <SelectValue placeholder="Any" />
@@ -100,11 +109,13 @@ export function SearchSection() {
           <div className="mt-12 bg-slate-100 rounded-2xl p-8 text-center">
             <p className="text-slate-600 mb-4">Advanced Search Integration</p>
             <div className="bg-white rounded-lg p-6 border-2 border-dashed border-slate-300">
-              <p className="text-slate-500">External search iframe will be embedded here</p>
+              <p className="text-slate-500">
+                External search iframe will be embedded here
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

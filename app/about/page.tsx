@@ -17,7 +17,7 @@ export default function AboutPage() {
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto text-pretty">
             {
-              "Three decades of excellence in luxury real estate, built on trust, expertise, and unwavering commitment to our clients."
+              "Three decades of excellence in premium real estate, built on trust, expertise, and unwavering commitment to our clients."
             }
           </p>
         </div>

@@ -8,7 +8,7 @@ const benefits = [
   {
     icon: TrendingUp,
     title: "Market Updates",
-    description: "Weekly luxury market trends and analysis",
+    description: "Weekly premium market trends and analysis",
   },
   {
     icon: FileText,
@@ -18,12 +18,12 @@ const benefits = [
   {
     icon: Users,
     title: "Expert Insights",
-    description: "Professional advice from our luxury specialists",
+    description: "Professional advice from our premium specialists",
   },
 ];
 
 const recentTopics = [
-  "Q3 2025 Luxury Market Outlook",
+  "Q3 2025 Premium Market Outlook",
   "Waterfront Property Investment Guide",
   "Smart Home Technology Trends",
   "International Market Opportunities",
@@ -43,8 +43,8 @@ export function NewsletterSignup() {
               Get Exclusive Market Insights
             </h2>
             <p className="text-xl text-stone-300 leading-relaxed mb-8">
-              Join over 5,000 luxury real estate professionals and investors who
-              rely on our weekly insights to stay ahead of market trends.
+              Join over 5,000 premium real estate professionals and investors
+              who rely on our weekly insights to stay ahead of market trends.
             </p>
 
             {/* Benefits */}
@@ -137,7 +137,7 @@ export function NewsletterSignup() {
                         "Market Reports & Trends",
                         "Investment Opportunities",
                         "Neighborhood Guides",
-                        "Luxury Property Listings",
+                        "Premium Property Listings",
                       ].map((interest, index) => (
                         <label
                           key={index}
@@ -166,7 +166,7 @@ export function NewsletterSignup() {
                 {/* Social Proof */}
                 <div className="mt-6 pt-6 border-t border-stone-200 text-center">
                   <p className="text-sm text-stone-600 mb-2">
-                    Trusted by luxury real estate professionals
+                    Trusted by premium real estate professionals
                   </p>
                   <div className="flex justify-center items-center gap-4 text-xs text-stone-500">
                     <span>5,000+ Subscribers</span>

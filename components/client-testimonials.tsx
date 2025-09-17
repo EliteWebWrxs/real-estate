@@ -1,7 +1,7 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Star, Quote } from "lucide-react"
-import Image from "next/image"
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 
 export function ClientTestimonials() {
   const testimonials = [
@@ -23,7 +23,7 @@ export function ClientTestimonials() {
       image: "/professional-asian-man-client.jpg",
       rating: 5,
       testimonial:
-        "Earl provided exceptional guidance throughout our property sale. His market analysis was spot-on, and we achieved 12% above asking price. Truly the best in Tampa luxury real estate.",
+        "Earl provided exceptional guidance throughout our property sale. His market analysis was spot-on, and we achieved 12% above asking price. Truly the best in Tampa premium real estate.",
       propertyValue: "$3.1M",
       date: "February 2024",
     },
@@ -34,7 +34,7 @@ export function ClientTestimonials() {
       image: "/professional-latina-woman-client.jpg",
       rating: 5,
       testimonial:
-        "Earl's expertise in luxury transactions was invaluable. He understood our unique needs and made the entire process effortless. Highly recommended for Tampa luxury properties.",
+        "Earl's expertise in premium transactions was invaluable. He understood our unique needs and made the entire process effortless. Highly recommended for Tampa premium properties.",
       propertyValue: "$2.8M",
       date: "January 2024",
     },
@@ -71,23 +71,25 @@ export function ClientTestimonials() {
       propertyValue: "$15M Portfolio",
       date: "October 2023",
     },
-  ]
+  ];
 
   const stats = [
     { label: "Client Satisfaction Rate", value: "98.5%" },
     { label: "Repeat Clients", value: "87%" },
     { label: "Referral Rate", value: "92%" },
     { label: "Average Review Rating", value: "4.9/5" },
-  ]
+  ];
 
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-6">Client Testimonials</h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            Client Testimonials
+          </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty">
             {
-              "My clients' success stories speak to my commitment to excellence and the exceptional results I deliver in Tampa's luxury real estate market."
+              "My clients' success stories speak to my commitment to excellence and the exceptional results I deliver in Tampa's premium real estate market."
             }
           </p>
         </div>
@@ -97,7 +99,9 @@ export function ClientTestimonials() {
           {stats.map((stat) => (
             <Card key={stat.label} className="border-slate-200 text-center">
               <CardContent className="p-6">
-                <div className="text-3xl font-bold text-amber-600 mb-2">{stat.value}</div>
+                <div className="text-3xl font-bold text-amber-600 mb-2">
+                  {stat.value}
+                </div>
                 <div className="text-slate-600 font-medium">{stat.label}</div>
               </CardContent>
             </Card>
@@ -107,7 +111,10 @@ export function ClientTestimonials() {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <Card
+              key={testimonial.name}
+              className="border-slate-200 hover:shadow-lg transition-shadow duration-300"
+            >
               <CardContent className="p-8">
                 {/* Quote Icon */}
                 <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mb-6">
@@ -117,12 +124,17 @@ export function ClientTestimonials() {
                 {/* Rating */}
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                    <Star
+                      key={i}
+                      className="w-4 h-4 fill-amber-400 text-amber-400"
+                    />
                   ))}
                 </div>
 
                 {/* Testimonial Text */}
-                <p className="text-slate-600 mb-6 leading-relaxed">"{testimonial.testimonial}"</p>
+                <p className="text-slate-600 mb-6 leading-relaxed">
+                  "{testimonial.testimonial}"
+                </p>
 
                 {/* Client Info */}
                 <div className="flex items-center space-x-4 mb-4">
@@ -134,7 +146,9 @@ export function ClientTestimonials() {
                     className="rounded-full"
                   />
                   <div>
-                    <h4 className="font-semibold text-slate-900">{testimonial.name}</h4>
+                    <h4 className="font-semibold text-slate-900">
+                      {testimonial.name}
+                    </h4>
                     <p className="text-sm text-slate-600">{testimonial.role}</p>
                   </div>
                 </div>
@@ -143,17 +157,24 @@ export function ClientTestimonials() {
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-slate-500">Property:</span>
-                    <span className="text-sm text-slate-700">{testimonial.location}</span>
+                    <span className="text-sm text-slate-700">
+                      {testimonial.location}
+                    </span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-slate-500">Value:</span>
-                    <Badge variant="secondary" className="bg-amber-100 text-amber-800">
+                    <Badge
+                      variant="secondary"
+                      className="bg-amber-100 text-amber-800"
+                    >
                       {testimonial.propertyValue}
                     </Badge>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-slate-500">Date:</span>
-                    <span className="text-sm text-slate-700">{testimonial.date}</span>
+                    <span className="text-sm text-slate-700">
+                      {testimonial.date}
+                    </span>
                   </div>
                 </div>
               </CardContent>
@@ -162,5 +183,5 @@ export function ClientTestimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }

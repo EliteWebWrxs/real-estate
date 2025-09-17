@@ -1,63 +1,74 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 export function CompanyHistory() {
   const milestones = [
     {
       year: "2009",
       title: "Foundation",
-      description: "Earl began his luxury real estate career with a vision to redefine service standards in Tampa",
+      description:
+        "Earl began his premium real estate career with a vision to redefine service standards in Tampa",
     },
     {
       year: "2015",
       title: "Market Leadership",
-      description: "Became one of the leading luxury real estate specialists in the Tampa Bay area",
+      description:
+        "Became one of the leading premium real estate specialists in the Tampa Bay area",
     },
     {
       year: "2018",
-      title: "Luxury Focus",
-      description: "Specialized exclusively in luxury properties and high-net-worth clientele",
+      title: "Premium Focus",
+      description:
+        "Specialized exclusively in premium properties and high-net-worth clientele",
     },
     {
       year: "2021",
       title: "Digital Innovation",
-      description: "Pioneered virtual reality property tours and advanced marketing techniques",
+      description:
+        "Pioneered virtual reality property tours and advanced marketing techniques",
     },
     {
       year: "2024",
-      title: "Sustainable Luxury",
-      description: "Leading Tampa's luxury market in eco-luxury and sustainable property solutions",
+      title: "Sustainable Premium",
+      description:
+        "Leading Tampa's premium market in eco-luxury and sustainable property solutions",
     },
-  ]
+  ];
 
   const values = [
     {
       title: "Excellence",
-      description: "I pursue perfection in every detail, from property presentation to client service.",
+      description:
+        "I pursue perfection in every detail, from property presentation to client service.",
     },
     {
       title: "Integrity",
-      description: "Transparent, honest relationships built on trust and mutual respect.",
+      description:
+        "Transparent, honest relationships built on trust and mutual respect.",
     },
     {
       title: "Innovation",
-      description: "Embracing cutting-edge technology to enhance the luxury real estate experience.",
+      description:
+        "Embracing cutting-edge technology to enhance the premium real estate experience.",
     },
     {
       title: "Exclusivity",
-      description: "Curating the finest properties for the most discerning clientele in Tampa.",
+      description:
+        "Curating the finest properties for the most discerning clientele in Tampa.",
     },
-  ]
+  ];
 
   return (
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Company History */}
         <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-6">My Journey</h2>
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+            My Journey
+          </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto text-pretty">
             {
-              "From the beginning of my career to becoming Tampa's premier luxury real estate specialist, my journey spans over a decade of innovation, growth, and unwavering commitment to excellence."
+              "From the beginning of my career to becoming Tampa's premier premium real estate specialist, my journey spans over a decade of innovation, growth, and unwavering commitment to excellence."
             }
           </p>
         </div>
@@ -69,15 +80,26 @@ export function CompanyHistory() {
             {milestones.map((milestone, index) => (
               <div
                 key={milestone.year}
-                className={`relative flex items-center ${index % 2 === 0 ? "justify-start" : "justify-end"}`}
+                className={`relative flex items-center ${
+                  index % 2 === 0 ? "justify-start" : "justify-end"
+                }`}
               >
-                <div className={`w-5/12 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
+                <div
+                  className={`w-5/12 ${
+                    index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"
+                  }`}
+                >
                   <Card className="border-slate-200 shadow-lg hover:shadow-xl transition-shadow duration-300">
                     <CardContent className="p-6">
-                      <Badge variant="secondary" className="mb-3 bg-amber-100 text-amber-800">
+                      <Badge
+                        variant="secondary"
+                        className="mb-3 bg-amber-100 text-amber-800"
+                      >
                         {milestone.year}
                       </Badge>
-                      <h3 className="font-serif text-xl font-semibold text-slate-900 mb-2">{milestone.title}</h3>
+                      <h3 className="font-serif text-xl font-semibold text-slate-900 mb-2">
+                        {milestone.title}
+                      </h3>
                       <p className="text-slate-600">{milestone.description}</p>
                     </CardContent>
                   </Card>
@@ -90,23 +112,34 @@ export function CompanyHistory() {
 
         {/* Values */}
         <div className="text-center mb-12">
-          <h3 className="font-serif text-3xl font-bold text-slate-900 mb-6">My Core Values</h3>
+          <h3 className="font-serif text-3xl font-bold text-slate-900 mb-6">
+            My Core Values
+          </h3>
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            {"The principles that guide every decision and define my commitment to excellence."}
+            {
+              "The principles that guide every decision and define my commitment to excellence."
+            }
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {values.map((value) => (
-            <Card key={value.title} className="border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <Card
+              key={value.title}
+              className="border-slate-200 hover:shadow-lg transition-shadow duration-300"
+            >
               <CardContent className="p-6 text-center">
-                <h4 className="font-serif text-xl font-semibold text-slate-900 mb-3">{value.title}</h4>
-                <p className="text-slate-600 text-sm leading-relaxed">{value.description}</p>
+                <h4 className="font-serif text-xl font-semibold text-slate-900 mb-3">
+                  {value.title}
+                </h4>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  {value.description}
+                </p>
               </CardContent>
             </Card>
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }

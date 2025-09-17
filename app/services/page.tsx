@@ -9,9 +9,9 @@ import { ConciergeServices } from "@/components/concierge-services";
 import { ServicesCTA } from "@/components/services-cta";
 
 export const metadata: Metadata = {
-  title: "Luxury Real Estate Services | Premium Property Solutions",
+  title: "Premium Real Estate Services | Premium Property Solutions",
   description:
-    "Comprehensive luxury real estate services including buying, selling, investment consulting, property management, market analysis, and exclusive concierge services.",
+    "Comprehensive premium real estate services including buying, selling, investment consulting, property management, market analysis, and exclusive concierge services.",
 };
 
 export default function ServicesPage() {

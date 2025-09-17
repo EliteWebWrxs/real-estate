@@ -11,7 +11,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <img
           src="/luxury-modern-mansion-exterior-with-pool-at-sunset.jpg"
-          alt="Luxury Property"
+          alt="Premium Property"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
@@ -25,7 +25,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-xl md:text-2xl font-light mb-12 text-gray-200 max-w-2xl mx-auto text-pretty">
-          Exclusive luxury properties curated for the most discerning clients.
+          Exclusive premium properties curated for the most discerning clients.
           Experience unparalleled elegance and sophistication.
         </p>
 

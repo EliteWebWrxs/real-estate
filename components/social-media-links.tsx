@@ -22,7 +22,7 @@ const socialPlatforms = [
   {
     name: "Facebook",
     icon: Facebook,
-    handle: "Luxury Real Estate",
+    handle: "Premium Real Estate",
     followers: "85K",
     description: "Market updates and community insights",
     url: "https://facebook.com/luxuryrealestate",
@@ -31,7 +31,7 @@ const socialPlatforms = [
   {
     name: "LinkedIn",
     icon: Linkedin,
-    handle: "Luxury Real Estate Group",
+    handle: "Premium Real Estate Group",
     followers: "45K",
     description: "Professional network and industry insights",
     url: "https://linkedin.com/company/luxuryrealestate",
@@ -40,7 +40,7 @@ const socialPlatforms = [
   {
     name: "YouTube",
     icon: Youtube,
-    handle: "Luxury Properties TV",
+    handle: "Premium Properties TV",
     followers: "95K",
     description: "Property tours and market analysis videos",
     url: "https://youtube.com/luxuryproperties",
@@ -75,7 +75,7 @@ export default function SocialMediaLinks() {
             Connect With Me
           </h2>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Follow us on social media for the latest luxury listings, market
+            Follow us on social media for the latest premium listings, market
             insights, and exclusive content
           </p>
         </div>
@@ -135,7 +135,7 @@ export default function SocialMediaLinks() {
           </h3>
           <p className="text-lg text-neutral-600 mb-6 max-w-2xl mx-auto">
             Subscribe to our newsletter for exclusive listings, market reports,
-            and luxury real estate insights delivered to your inbox
+            and premium real estate insights delivered to your inbox
           </p>
           <Button
             size="lg"

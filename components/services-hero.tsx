@@ -22,13 +22,13 @@ export function ServicesHero() {
         </div>
 
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-light mb-6 text-balance">
-          Comprehensive Luxury
+          Comprehensive Premium
           <span className="block text-amber-400">Real Estate Services</span>
         </h1>
 
         <p className="text-xl md:text-2xl text-stone-200 mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
           From exclusive property acquisition to white-glove concierge services,
-          we provide unparalleled expertise in luxury real estate.
+          we provide unparalleled expertise in premium real estate.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

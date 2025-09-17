@@ -5,9 +5,9 @@ import SearchFilters from "@/components/search-filters";
 import SearchResults from "@/components/search-results";
 
 export const metadata: Metadata = {
-  title: "Property Search | Luxury Real Estate",
+  title: "Property Search | Premium Real Estate",
   description:
-    "Search luxury properties with our advanced MLS search tool. Find your dream home with comprehensive filters and real-time market data.",
+    "Search premium properties with our advanced MLS search tool. Find your dream home with comprehensive filters and real-time market data.",
 };
 
 export default function SearchPage() {

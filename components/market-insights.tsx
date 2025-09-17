@@ -14,7 +14,7 @@ import {
 
 const marketData = [
   {
-    title: "Luxury Market Growth",
+    title: "Premium Market Growth",
     value: "+12.5%",
     change: "vs last year",
     trend: "up",
@@ -49,7 +49,7 @@ const marketData = [
 
 const insights = [
   {
-    title: "Luxury Market Outlook 2025",
+    title: "Premium Market Outlook 2025",
     excerpt:
       "Premium properties continue to show resilience with strong demand from high-net-worth individuals seeking trophy assets.",
     date: "December 15, 2024",
@@ -57,7 +57,7 @@ const insights = [
     category: "Market Analysis",
   },
   {
-    title: "Emerging Luxury Neighborhoods",
+    title: "Emerging Premium Neighborhoods",
     excerpt:
       "Discover the next wave of prestigious locations attracting discerning buyers and commanding premium valuations.",
     date: "December 10, 2024",
@@ -67,7 +67,7 @@ const insights = [
   {
     title: "Investment Strategies for Ultra-High-End Properties",
     excerpt:
-      "Expert guidance on maximizing returns and building generational wealth through luxury real estate investments.",
+      "Expert guidance on maximizing returns and building generational wealth through premium real estate investments.",
     date: "December 5, 2024",
     readTime: "6 min read",
     category: "Investment",
@@ -89,7 +89,7 @@ export function MarketInsights() {
             </h2>
             <p className="text-xl text-slate-600 font-light max-w-3xl mx-auto text-pretty">
               Expert analysis and real-time data to help you make informed
-              decisions in the luxury real estate market.
+              decisions in the premium real estate market.
             </p>
           </div>
 
@@ -150,10 +150,10 @@ export function MarketInsights() {
                     Market Analysis
                   </Badge>
                   <h4 className="text-2xl font-semibold text-slate-900 mb-4">
-                    Q3 2025 Luxury Real Estate Report
+                    Q3 2025 Premium Real Estate Report
                   </h4>
                   <p className="text-slate-600 mb-6 leading-relaxed">
-                    Comprehensive analysis of luxury market trends, pricing
+                    Comprehensive analysis of premium market trends, pricing
                     dynamics, and investment opportunities across major
                     metropolitan areas. Our quarterly report provides actionable
                     insights for buyers, sellers, and investors.
@@ -231,7 +231,7 @@ export function MarketInsights() {
               <CardContent className="p-12 text-center">
                 <h3 className="text-3xl font-light mb-4">Stay Informed</h3>
                 <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-                  Get exclusive market insights, luxury property alerts, and
+                  Get exclusive market insights, premium property alerts, and
                   investment opportunities delivered to your inbox.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">

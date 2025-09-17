@@ -1,12 +1,27 @@
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Separator } from "@/components/ui/separator"
-import { Badge } from "@/components/ui/badge"
-import { MapPin, DollarSign, Home, Bed, Bath, Square, Calendar, Star } from "lucide-react"
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Separator } from "@/components/ui/separator";
+import { Badge } from "@/components/ui/badge";
+import {
+  MapPin,
+  DollarSign,
+  Home,
+  Bed,
+  Bath,
+  Square,
+  Calendar,
+  Star,
+} from "lucide-react";
 
 export default function SearchFilters() {
   return (
@@ -20,7 +35,10 @@ export default function SearchFilters() {
         {/* Location */}
         <div className="space-y-4 mb-6">
           <Label className="text-stone-700 font-medium">Location</Label>
-          <Input placeholder="City, neighborhood, or ZIP code" className="border-stone-300 focus:border-amber-500" />
+          <Input
+            placeholder="City, neighborhood, or ZIP code"
+            className="border-stone-300 focus:border-amber-500"
+          />
         </div>
 
         <Separator className="my-6" />
@@ -68,14 +86,19 @@ export default function SearchFilters() {
             Property Type
           </Label>
           <div className="space-y-2">
-            {["House", "Condo", "Penthouse", "Villa", "Townhouse", "Land"].map((type) => (
-              <div key={type} className="flex items-center space-x-2">
-                <Checkbox id={type.toLowerCase()} />
-                <Label htmlFor={type.toLowerCase()} className="text-sm text-stone-600">
-                  {type}
-                </Label>
-              </div>
-            ))}
+            {["House", "Condo", "Penthouse", "Villa", "Townhouse", "Land"].map(
+              (type) => (
+                <div key={type} className="flex items-center space-x-2">
+                  <Checkbox id={type.toLowerCase()} />
+                  <Label
+                    htmlFor={type.toLowerCase()}
+                    className="text-sm text-stone-600"
+                  >
+                    {type}
+                  </Label>
+                </div>
+              )
+            )}
           </div>
         </div>
 
@@ -159,27 +182,39 @@ export default function SearchFilters() {
 
         <Separator className="my-6" />
 
-        {/* Luxury Features */}
+        {/* Premium Features */}
         <div className="space-y-4 mb-6">
           <Label className="text-stone-700 font-medium flex items-center gap-2">
             <Star className="w-4 h-4" />
-            Luxury Features
+            Premium Features
           </Label>
           <div className="space-y-2">
-            {["Pool", "Ocean View", "Wine Cellar", "Home Theater", "Gym", "Guest House", "Smart Home", "Elevator"].map(
-              (feature) => (
-                <div key={feature} className="flex items-center space-x-2">
-                  <Checkbox id={feature.toLowerCase().replace(" ", "-")} />
-                  <Label htmlFor={feature.toLowerCase().replace(" ", "-")} className="text-sm text-stone-600">
-                    {feature}
-                  </Label>
-                </div>
-              ),
-            )}
+            {[
+              "Pool",
+              "Ocean View",
+              "Wine Cellar",
+              "Home Theater",
+              "Gym",
+              "Guest House",
+              "Smart Home",
+              "Elevator",
+            ].map((feature) => (
+              <div key={feature} className="flex items-center space-x-2">
+                <Checkbox id={feature.toLowerCase().replace(" ", "-")} />
+                <Label
+                  htmlFor={feature.toLowerCase().replace(" ", "-")}
+                  className="text-sm text-stone-600"
+                >
+                  {feature}
+                </Label>
+              </div>
+            ))}
           </div>
         </div>
 
-        <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">Apply Filters</Button>
+        <Button className="w-full bg-amber-600 hover:bg-amber-700 text-white">
+          Apply Filters
+        </Button>
       </Card>
 
       {/* Active Filters */}
@@ -198,5 +233,5 @@ export default function SearchFilters() {
         </div>
       </Card>
     </div>
-  )
+  );
 }
